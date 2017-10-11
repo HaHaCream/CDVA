@@ -1,0 +1,26 @@
+This directory contains a set of tools that rely on proper installation of opencv.
+To install it on Ubuntu 16.04 (this will install opencv 2.4.9.1):
+	sudo apt install libopencv-dev
+
+To install it on Windows 64 bit:
+Download opencv v.2.4.11 from http://sourceforge.net/projects/opencvlibrary/files/opencv-win/2.4.11/opencv-2.4.11.exe/download
+Then run the installation executable (it will unzip the package).
+Move the opencv directory to C:\local
+
+From OpenCV documentation:
+First we set an enviroment variable to make easier our work. This will hold the build directory of our OpenCV library that we use in our projects. 
+Start up a command window as ADMINISTRATOR and enter:
+
+setx -m OPENCV_DIR C:\local\opencv\build\x64\vc10     (suggested for Visual Studio 2010 - 64 bit Windows)
+setx -m OPENCV_DIR C:\local\opencv\build\x64\vc11     (suggested for Visual Studio 2011 - 64 bit Windows)
+setx -m OPENCV_DIR C:\local\opencv\build\x64\vc12     (suggested for Visual Studio 2012 - 64 bit Windows)
+
+Here the directory is where you have your OpenCV binaries (extracted or built). Inside this you should have two folders called lib and bin. 
+The -m should be added if you wish to make the settings computer wise, instead of user wise.
+
+Then set the corresponding binary directory as an additional path (select the correct line):
+PATH = %PATH%;C:\local\opencv\build\x64\vc10\bin
+PATH = %PATH%;C:\local\opencv\build\x64\vc11\bin
+PATH = %PATH%;C:\local\opencv\build\x64\vc12\bin
+
+Then open the ".\build\win\cdva\cdva.sln" solution with Visual Studio, set x64/release and build the project.

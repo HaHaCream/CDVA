@@ -1,0 +1,20 @@
+Experimentation Model 1.0
+===============
+2016-06-28  Massimo Balestri <massimo.balestri@telecomitalia.it>
+  * usage message changed to "CDVA Experimentation Model, version 1.0"
+  * includes changes proposed in m39433 - "Improved temporal localization for CDVA"
+
+Experimentation Model 0.2
+===============
+2016-06-28  Massimo Balestri <massimo.balestri@telecomitalia.it>
+  * includes the keyframe selector
+
+Experimentation Model 0.1
+===============
+2016-04-12  Massimo Balestri <massimo.balestri@telecomitalia.it>
+  * Initial version of CXM (CDVA Experimentation Model)
+
+Evaluation Framework 1.0
+==============
+2015-08-31  Massimo Balestri <massimo.balestri@telecomitalia.it>
+   * release of CDVA evaluation framework
